@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class="cabeçadapagina">
+<header>
+   <nav>
+        <ul>
+          <li> <a href="index.html">MENU</a></li>
+          <li><a href="#">CREDITOS</a></li>
+          <li><a href="#" class="abrir" onclick="abrirMenu()">&#9776; Menu</a></li>
+        </ul>
+   </nav>
+</header>
+</div>
+<nav id="barralat">
+    <a href="#" class="barralata" onclick="fecharMenu()">FECHAR</a>
+    <a href="cartas.html" class="barralata">CARTAS</a>
+    <a href="#" class="barralata">REGRAS</a>
+    <a href="#" class="barralata">CREDITOS</a>
+</nav>
+<main class="conteudo">
+
+
+<!--aqui fica td o conteudo da parte-->
+
+
+
+</main>
+<script>
+    function abrirMenu() {
+        document.getElementById('barralat').style.width ='250px';
+        document.getElementById('conteudo').style.marginLeft='250px';
+
+    }
+    function fecharMenu(){
+        document.getElementById('barralat').style.width ='0px';
+        document.getElementById('conteudo').style.marginLeft='0px'
+    }
+</script>
+</body>
+</html>
